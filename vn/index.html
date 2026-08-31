@@ -101,12 +101,13 @@
 
     .page-shell {
       display: grid;
-      grid-template-columns: var(--sidebar) minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr) var(--sidebar);
+      grid-template-areas: "content sidebar";
       gap: clamp(44px, 7vw, 96px);
       width: min(1240px, calc(100% - 40px));
       margin: 0 auto;
     }
-    .sidebar { padding-top: 84px; }
+    .sidebar { grid-area: sidebar; padding-top: 84px; }
     .sidebar-inner { position: sticky; top: 28px; }
     .sidebar-label { margin: 0 0 13px; color: var(--coral); font-size: .71rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
     .toc { display: grid; gap: 3px; padding-left: 15px; border-left: 1px solid var(--line); }
@@ -116,7 +117,7 @@
     .toc a.active::before { top: 15%; height: 70%; }
     .sidebar-meta { margin: 24px 0 0; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: .75rem; }
 
-    main { min-width: 0; }
+    main { grid-area: content; min-width: 0; }
     section { scroll-margin-top: 28px; padding: 90px 0; border-bottom: 1px solid var(--line); }
     .section-head { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 26px; margin-bottom: 38px; }
     .section-no { color: var(--gold); font: 500 3.2rem/1 Georgia, serif; }
@@ -147,6 +148,8 @@
     .legend i.pending { height: 0; border-top: 3px dashed var(--gold); background: transparent; }
     .map-route-text { margin-top: 18px; padding: 17px 20px; border-radius: 16px; background: #e8eee9; color: #35584c; }
     .number-marker { display: grid; place-items: center; width: 32px; height: 32px; border: 3px solid white; border-radius: 50%; background: var(--green); color: white; box-shadow: 0 4px 12px rgba(0,0,0,.25); font: 800 13px/1 system-ui, sans-serif; }
+    .chinese-map-label { padding: 4px 8px; border: 0; border-radius: 999px; background: rgba(255,253,248,.94); color: var(--ink); box-shadow: 0 3px 12px rgba(23,59,49,.16); font: 750 12px/1.2 "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+    .chinese-map-label::before { display: none; }
     .leaflet-popup-content a { color: var(--green); font-weight: 750; }
 
     .table-scroll { overflow-x: auto; border-radius: 20px; box-shadow: 0 8px 26px rgba(29,53,44,.07); }
@@ -194,7 +197,7 @@
 
     @media (max-width: 960px) {
       .mobile-menu { display: block; }
-      .page-shell { grid-template-columns: 1fr; }
+      .page-shell { grid-template-columns: 1fr; grid-template-areas: "content"; }
       .sidebar { display: none; }
       section { scroll-margin-top: 66px; }
       .overview-grid { grid-template-columns: 1fr; }
@@ -504,16 +507,33 @@
         { id: 'mucangchai', name: '木江界', number: '3', lat: 21.7722, lng: 104.0892, role: '梯田、山谷与村寨' },
         { id: 'hcmc', name: '胡志明市', number: '4', lat: 10.8231, lng: 106.6297, role: '南部都市与离境收尾' }
       ];
-      const map = L.map('route-map', { scrollWheelZoom: false, zoomSnap: .5 });
+      const map = L.map('route-map', {
+        scrollWheelZoom: true,
+        dragging: true,
+        touchZoom: true,
+        keyboard: true,
+        zoomControl: false,
+        zoomSnap: .5
+      });
+      map.getContainer().setAttribute('lang', 'zh-CN');
+      map.getContainer().setAttribute('title', '可用鼠标拖拽地图，并使用滚轮放大或缩小');
+      L.control.zoom({
+        position: 'topright',
+        zoomInText: '＋',
+        zoomInTitle: '放大地图',
+        zoomOutText: '−',
+        zoomOutTitle: '缩小地图'
+      }).addTo(map);
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 18,
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> 贡献者'
       }).addTo(map);
 
       const markerIcon = (number) => L.divIcon({ className: '', html: '<span class="number-marker">' + number + '</span>', iconSize: [32, 32], iconAnchor: [16, 16] });
       stops.forEach((stop) => {
         L.marker([stop.lat, stop.lng], { icon: markerIcon(stop.number), title: stop.name })
           .addTo(map)
+          .bindTooltip(stop.name, { permanent: true, direction: 'right', offset: [12, 0], className: 'chinese-map-label' })
           .bindPopup('<b>' + stop.number + ' · ' + stop.name + '</b><br>' + stop.role + '<br><a href="#' + stop.id + '">查看详细介绍</a>');
       });
 
