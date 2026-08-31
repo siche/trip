@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026年9月28日至10月8日越南旅行指南总览：北京或南京、河内、宁平、木江界、胡志明市。">
+  <title>越南旅行指南｜2026.09.28—10.08</title>
+  <style>
+    :root {
+      --ink: #173b31;
+      --muted: #62756e;
+      --paper: #f5f1e8;
+      --card: #fffdf8;
+      --green: #245e4d;
+      --green-2: #3f7d67;
+      --gold: #d69a43;
+      --coral: #c7654f;
+      --line: rgba(23, 59, 49, .14);
+      --shadow: 0 16px 40px rgba(29, 53, 44, .12);
+      --radius: 24px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+      line-height: 1.78;
+    }
+    img { display: block; width: 100%; }
+    a { color: inherit; }
+    .hero {
+      min-height: 92vh;
+      position: relative;
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      background: #183c31;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(9, 32, 26, .1) 18%, rgba(9, 32, 26, .82) 88%);
+    }
+    .hero img {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      object-fit: cover;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 100px 0 76px;
+      color: #fff;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 34px; height: 2px; background: var(--gold); }
+    h1 {
+      max-width: 820px;
+      margin: 20px 0 18px;
+      font-family: Georgia, "Noto Serif SC", serif;
+      font-size: clamp(3.2rem, 8vw, 7.4rem);
+      line-height: .98;
+      letter-spacing: -.045em;
+    }
+    .hero-lead { max-width: 710px; margin: 0; color: rgba(255,255,255,.86); font-size: 1.1rem; }
+    .facts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .fact { padding: 10px 15px; border: 1px solid rgba(255,255,255,.28); border-radius: 999px; background: rgba(15,45,36,.32); backdrop-filter: blur(8px); }
+    .nav-wrap { position: sticky; top: 0; z-index: 20; background: rgba(245,241,232,.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+    nav { width: min(1180px, calc(100% - 28px)); margin: auto; display: flex; gap: 8px; overflow-x: auto; padding: 11px 0; scrollbar-width: none; }
+    nav a { white-space: nowrap; text-decoration: none; padding: 7px 12px; border-radius: 999px; color: var(--muted); font-size: .88rem; }
+    nav a:hover, nav a.active { color: white; background: var(--green); }
+    main { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+    section { scroll-margin-top: 84px; padding: 96px 0; border-bottom: 1px solid var(--line); }
+    .section-head { display: grid; grid-template-columns: 130px 1fr; gap: 30px; margin-bottom: 42px; }
+    .section-no { font-family: Georgia, serif; font-size: 3.4rem; color: var(--gold); line-height: 1; }
+    h2 { margin: 0; font-family: Georgia, "Noto Serif SC", serif; font-size: clamp(2rem, 4vw, 3.6rem); line-height: 1.16; letter-spacing: -.025em; }
+    h3 { margin: 0 0 12px; font-size: 1.35rem; }
+    p { margin: 0 0 1em; }
+    .lead { max-width: 820px; font-size: 1.13rem; color: var(--muted); }
+    .route-strip { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; align-items: center; margin-top: 36px; }
+    .route-stop { min-height: 106px; display: grid; place-items: center; text-align: center; padding: 14px 8px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 7px 22px rgba(29,53,44,.06); }
+    .route-stop b { display: block; }
+    .route-stop small { color: var(--muted); }
+    .route-arrow { text-align: center; color: var(--gold); font-weight: 900; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { padding: 26px; border-radius: 20px; background: var(--card); border: 1px solid var(--line); }
+    .card p:last-child { margin-bottom: 0; }
+    .photo-grid { display: grid; grid-template-columns: 1.15fr .85fr; grid-template-rows: repeat(2, 280px); gap: 14px; margin: 30px 0 34px; }
+    .photo-grid figure:first-child { grid-row: 1 / 3; }
+    figure { position: relative; margin: 0; overflow: hidden; border-radius: var(--radius); background: #d9dfd8; cursor: zoom-in; }
+    figure img { height: 100%; object-fit: cover; transition: transform .5s ease; }
+    figure:hover img { transform: scale(1.025); }
+    figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 45px 18px 15px; color: #fff; background: linear-gradient(transparent, rgba(10,30,25,.84)); font-size: .86rem; }
+    .place-copy { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .tag { display: inline-block; margin-right: 8px; margin-bottom: 8px; padding: 5px 10px; border-radius: 999px; background: #e4eee8; color: var(--green); font-size: .78rem; font-weight: 700; }
+    .strategy { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .strategy article { padding: 28px; background: var(--card); border-radius: 22px; border-left: 5px solid var(--green-2); }
+    .strategy article:nth-child(2n) { border-left-color: var(--gold); }
+    .note { margin-top: 26px; padding: 20px 24px; border-radius: 18px; background: #e9f0ea; color: #35584c; }
+    .food-mosaic { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 28px; }
+    .food-mosaic .card { padding: 20px; min-height: 190px; position: relative; overflow: hidden; }
+    .food-mosaic .card::after { content: attr(data-mark); position: absolute; right: 14px; bottom: -28px; font-family: Georgia, serif; font-size: 6.5rem; line-height: 1; color: rgba(214,154,67,.13); }
+    .weather-band { display: grid; grid-template-columns: 1fr 1fr; gap: 0; overflow: hidden; border-radius: 26px; box-shadow: var(--shadow); }
+    .weather-band > div { padding: 36px; }
+    .weather-north { background: #315f53; color: white; }
+    .weather-south { background: #d89045; color: #2f2b20; }
+    table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 20px; overflow: hidden; box-shadow: 0 8px 26px rgba(29,53,44,.07); }
+    th, td { padding: 17px 18px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { background: #e7eee9; color: var(--green); }
+    tr:last-child td { border-bottom: 0; }
+    .skeleton { display: grid; gap: 12px; margin-top: 28px; }
+    .skeleton-row { display: grid; grid-template-columns: 150px 1fr; gap: 20px; padding: 20px 22px; background: var(--card); border-radius: 18px; border: 1px solid var(--line); }
+    .skeleton-row time { font-weight: 800; color: var(--coral); }
+    .todo { columns: 2; column-gap: 36px; padding-left: 1.2em; }
+    .todo li { break-inside: avoid; margin-bottom: 12px; }
+    .credits { color: var(--muted); font-size: .82rem; }
+    .credits li { margin-bottom: 7px; }
+    footer { padding: 46px 20px 70px; text-align: center; color: var(--muted); }
+    dialog { width: min(1050px, calc(100% - 28px)); padding: 0; border: 0; border-radius: 20px; overflow: hidden; background: #0b1713; box-shadow: 0 28px 90px rgba(0,0,0,.45); }
+    dialog::backdrop { background: rgba(5,15,12,.82); backdrop-filter: blur(5px); }
+    dialog img { max-height: 82vh; object-fit: contain; }
+    dialog button { position: absolute; top: 12px; right: 12px; width: 42px; height: 42px; border: 0; border-radius: 50%; background: rgba(0,0,0,.58); color: white; font-size: 1.5rem; cursor: pointer; }
+    @media (max-width: 820px) {
+      .hero { min-height: 78vh; }
+      .section-head { grid-template-columns: 1fr; gap: 12px; }
+      .section-no { font-size: 2.4rem; }
+      .route-strip { grid-template-columns: 1fr; }
+      .route-arrow { transform: rotate(90deg); }
+      .cards, .strategy, .place-copy, .weather-band { grid-template-columns: 1fr; }
+      .photo-grid { grid-template-columns: 1fr; grid-template-rows: repeat(3, 250px); }
+      .photo-grid figure:first-child { grid-row: auto; }
+      .food-mosaic { grid-template-columns: 1fr 1fr; }
+      .todo { columns: 1; }
+    }
+    @media (max-width: 520px) {
+      main { width: min(100% - 24px, 1180px); }
+      section { padding: 68px 0; }
+      h1 { font-size: 3.1rem; }
+      .food-mosaic { grid-template-columns: 1fr; }
+      .skeleton-row { grid-template-columns: 1fr; gap: 4px; }
+      th, td { padding: 12px; font-size: .85rem; }
+    }
+    @media print {
+      .nav-wrap, dialog { display: none; }
+      .hero { min-height: 500px; break-after: page; }
+      body { background: white; }
+      section { padding: 44px 0; break-inside: avoid; }
+      figure { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" id="top">
+    <img src="assets/mu-cang-chai.jpg" alt="木江界金色梯田">
+    <div class="hero-content">
+      <span class="eyebrow">Vietnam · Travel Overview</span>
+      <h1>越南<br>南北旅行指南</h1>
+      <p class="hero-lead">从河内的街巷，到宁平的峰林水道与木江界的秋日梯田，再落脚胡志明市。当前版本只确定旅行结构，为后续逐日细化保留弹性。</p>
+      <div class="facts">
+        <span class="fact">2026.09.28—10.08</span>
+        <span class="fact">11 天</span>
+        <span class="fact">北京／南京出发</span>
+        <span class="fact">北部自然 × 南北城市</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-wrap">
+    <nav aria-label="页面目录">
+      <a href="#overview">整体结构</a><a href="#hanoi">河内</a><a href="#ninhbinh">宁平</a><a href="#mucangchai">木江界</a><a href="#hcmc">胡志明市</a><a href="#transport">交通</a><a href="#stay">住宿</a><a href="#food">饮食人文</a><a href="#weather">天气</a><a href="#budget">预算</a><a href="#skeleton">路线骨架</a>
+    </nav>
+  </div>
+
+  <main>
+    <section id="overview">
+      <div class="section-head"><div class="section-no">01</div><div><h2>整体行程结构</h2><p class="lead">以河内和胡志明市作为南北两座城市锚点，中段串联喀斯特田园与西北山地。节奏遵循“城市适应—自然深入—城市休整—南部收尾”。</p></div></div>
+      <div class="route-strip" aria-label="路线顺序">
+        <div class="route-stop"><div><b>中国</b><small>北京／南京</small></div></div><div class="route-arrow">→</div>
+        <div class="route-stop"><div><b>河内</b><small>入境与北部集散</small></div></div><div class="route-arrow">→</div>
+        <div class="route-stop"><div><b>宁平</b><small>峰林与田园</small></div></div><div class="route-arrow">→</div>
+        <div class="route-stop"><div><b>木江界</b><small>梯田与山地</small></div></div>
+      </div>
+      <div class="route-strip" aria-label="返程路线">
+        <div class="route-stop"><div><b>木江界</b><small>北部重点</small></div></div><div class="route-arrow">→</div>
+        <div class="route-stop"><div><b>河内</b><small>休整与转场</small></div></div><div class="route-arrow">→</div>
+        <div class="route-stop"><div><b>胡志明市</b><small>南部都市</small></div></div><div class="route-arrow">→</div>
+        <div class="route-stop"><div><b>中国</b><small>北京／南京</small></div></div>
+      </div>
+      <div class="note">本页不锁定各地停留夜数，也不新增未经确认的逐日活动。国际航班、山区交通和住宿确定后，再把骨架拆成逐日版本。</div>
+    </section>
+
+    <section id="hanoi">
+      <div class="section-head"><div class="section-no">02</div><div><h2>河内｜北部的城市锚点</h2><p class="lead">既是入境后的第一站，也是宁平、木江界等北部线路的交通枢纽。街巷、湖区、老建筑与咖啡文化构成这座城市的日常底色。</p></div></div>
+      <div class="photo-grid">
+        <figure><img loading="lazy" src="assets/hanoi.jpg" alt="河内老城区街景"><figcaption>老城区街巷：密集、鲜活、充满日常交通与商业节奏</figcaption></figure>
+        <figure><img loading="lazy" src="assets/hoan-kiem.jpg" alt="河内还剑湖"><figcaption>还剑湖：老城核心的公共生活空间</figcaption></figure>
+        <figure><img loading="lazy" src="assets/temple-literature.jpg" alt="河内文庙"><figcaption>历史与教育传统：河内的人文侧面</figcaption></figure>
+      </div>
+      <div class="place-copy"><div><span class="tag">历史街区</span><span class="tag">咖啡文化</span><span class="tag">交通枢纽</span><h3>景色与定位</h3><p>适合从老城区、湖区与历史建筑切入，理解北部城市的历史层次和日常节奏。它不是单纯的中转站，而是整条路线的人文基准。</p></div><div><h3>在路线中的作用</h3><p>承担国际抵达、北部集散、木江界返程后的休整，以及飞往胡志明市前的衔接。首次抵达与二次返回河内可以采用不同住宿策略。</p></div></div>
+    </section>
+
+    <section id="ninhbinh">
+      <div class="section-head"><div class="section-no">03</div><div><h2>宁平｜峰林与水道之间</h2><p class="lead">从河内短途进入自然环境：石灰岩峰林、河流湿地、稻田和乡村道路，让行程从城市逐渐松弛下来。</p></div></div>
+      <div class="photo-grid">
+        <figure><img loading="lazy" src="assets/ninh-binh.jpg" alt="宁平长安景区"><figcaption>长安景观：河道、湿地与石灰岩峰林</figcaption></figure>
+        <figure><img loading="lazy" src="assets/tam-coc.jpg" alt="三谷河上小船"><figcaption>三谷水上视角：乘船穿行峰林之间</figcaption></figure>
+        <figure><img loading="lazy" src="assets/hang-mua.jpg" alt="宁平舞洞峰顶"><figcaption>舞洞一带：高处俯瞰稻田与喀斯特地貌</figcaption></figure>
+      </div>
+      <div class="place-copy"><div><span class="tag">喀斯特</span><span class="tag">水上体验</span><span class="tag">田园慢行</span><h3>景色与定位</h3><p>自然与人文空间紧密交叠，适合乘船、骑行或慢节奏探索。这里承担城市与西北山地之间的过渡，不宜被压缩成匆忙打卡。</p></div><div><h3>规划重点</h3><p>住宿地点会直接影响出行方式：景区周边更有田园氛围，交通节点则更利于转场。具体体验仍需在长安、三谷及周边人文点之间取舍。</p></div></div>
+    </section>
+
+    <section id="mucangchai">
+      <div class="section-head"><div class="section-no">04</div><div><h2>木江界｜秋日梯田主场</h2><p class="lead">本次北部自然段的高潮。梯田、山谷、公路与村寨共同构成景观，交通耗时和天气不确定性也在这里达到最高。</p></div></div>
+      <div class="photo-grid">
+        <figure><img loading="lazy" src="assets/mu-cang-chai.jpg" alt="木江界金色梯田"><figcaption>临近收获季的梯田；实际状态取决于当年物候与收割进度</figcaption></figure>
+        <figure><img loading="lazy" src="assets/che-cu-nha.jpg" alt="制句芽梯田"><figcaption>制句芽一带：山坡被层层梯田重新勾勒</figcaption></figure>
+        <figure><img loading="lazy" src="assets/khau-pha.jpg" alt="口簸山口"><figcaption>山地公路与垭口景观：转场本身也是体验</figcaption></figure>
+      </div>
+      <div class="place-copy"><div><span class="tag">梯田</span><span class="tag">山地公路</span><span class="tag">村落人文</span><h3>景色与定位</h3><p>旅行时间接近北部梯田观赏季，但“金色”并非日历承诺。应以当年水稻成熟和收割信息为准，并接受云雾、降雨带来的景观变化。</p></div><div><h3>规划重点</h3><p>山路安全和司机经验优先于赶点。住宿应核实道路可达性、热水、卫生与行李接送；返回河内后保留缓冲，不直接硬接重要航班。</p></div></div>
+    </section>
+
+    <section id="hcmc">
+      <div class="section-head"><div class="section-no">05</div><div><h2>胡志明市｜南部都市收尾</h2><p class="lead">从北部历史城市和山地风景切换到更现代、更商业化的南部都市，在离境前完成越南南北气质的对照。</p></div></div>
+      <div class="photo-grid">
+        <figure><img loading="lazy" src="assets/ho-chi-minh-city.jpg" alt="胡志明市天际线"><figcaption>西贡河沿岸的现代城市天际线</figcaption></figure>
+        <figure><img loading="lazy" src="assets/city-hall.jpg" alt="胡志明市人民委员会大厅"><figcaption>殖民时期建筑与城市夜色</figcaption></figure>
+        <figure><img loading="lazy" src="assets/post-office.jpg" alt="西贡中央邮局内部"><figcaption>中央邮局：城市历史建筑的室内空间</figcaption></figure>
+      </div>
+      <div class="place-copy"><div><span class="tag">南部都市</span><span class="tag">历史建筑</span><span class="tag">夜间生活</span><h3>景色与定位</h3><p>历史建筑、市场、咖啡馆、街区和当代天际线共同呈现这座城市。节奏比河内更外放，适合作为全程较轻松的收尾。</p></div><div><h3>在路线中的作用</h3><p>承担南北城市对照与国际离境。住宿应兼顾步行体验、餐饮密度和机场交通，离境前一晚尤其要关注路面交通时间。</p></div></div>
+    </section>
+
+    <section id="transport">
+      <div class="section-head"><div class="section-no">06</div><div><h2>交通策略</h2><p class="lead">先锁定国际进出，再确定越南国内段；把山区的不可控时间与城市航段解耦。</p></div></div>
+      <div class="strategy">
+        <article><h3>中国 → 河内</h3><p>北京与南京均作为可选起点，比较总旅行时间、转机次数、行李额度、退改条件和抵达时刻。</p></article>
+        <article><h3>河内 ↔ 宁平</h3><p>以公路或铁路为主，结合住宿位置选择。抵达／离开时间决定交通便利性与田园氛围之间的取舍。</p></article>
+        <article><h3>宁平 → 木江界</h3><p>跨区域移动较复杂，可经河内中转，或在确认可靠车辆后采用直接公路方案。不要只按地图距离估算。</p></article>
+        <article><h3>木江界 → 河内</h3><p>以公路为主，为山路、天气和交通波动预留时间；转场日不叠加不可退款的重要预订。</p></article>
+        <article><h3>河内 → 胡志明市</h3><p>优先国内航班，以减少长距离陆路占用。木江界返程后先在河内留出缓冲。</p></article>
+        <article><h3>胡志明市 → 中国</h3><p>可返回北京或南京，不强求与出发城市一致；以总价、总耗时与第二天安排作为比较标准。</p></article>
+      </div>
+    </section>
+
+    <section id="stay">
+      <div class="section-head"><div class="section-no">07</div><div><h2>住宿策略</h2><p class="lead">城市住宿重位置与交通，山地住宿重可达性与基础条件。把“住得有氛围”和“转场方便”视为两种不同功能。</p></div></div>
+      <div class="cards">
+        <div class="card"><h3>河内</h3><p>首次入住便于步行和体验城市；北部返程后的住宿则侧重休整和前往机场。两次入住无需强求同一区域。</p></div>
+        <div class="card"><h3>宁平</h3><p>田园民宿更有自然氛围；交通节点更便于早晚转场。先确定玩法与下一段交通，再决定住宿区域。</p></div>
+        <div class="card"><h3>木江界</h3><p>核实梯田视野、道路可达、热水卫生、夜间接待和行李接送。住宿选择有限，交通方向确认后宜优先锁定。</p></div>
+        <div class="card"><h3>胡志明市</h3><p>优先步行友好、餐饮丰富且前往机场顺畅的区域；返程航班较早时，避免只看景观而忽略通勤。</p></div>
+        <div class="card"><h3>预订节奏</h3><p>城市酒店优先可取消；山地住宿较早确认。待各地夜数落定后，再统一检查连续住宿与转场日期。</p></div>
+        <div class="card"><h3>统一核对</h3><p>房型、早餐、税费、入住时段、行李寄存、取消条款与联系方式，应在付款前留存截图或凭证。</p></div>
+      </div>
+    </section>
+
+    <section id="food">
+      <div class="section-head"><div class="section-no">08</div><div><h2>饮食与人文体验</h2><p class="lead">按地域体验口味变化，同时把街区、村落和日常生活放在与风景同等重要的位置。</p></div></div>
+      <div class="food-mosaic">
+        <div class="card" data-mark="北"><h3>河内／北部</h3><p>河粉、烤肉米线、春卷、越式咖啡与街头小吃，作为北部味觉基准。</p></div>
+        <div class="card" data-mark="乡"><h3>宁平</h3><p>结合乡野餐馆体验区域食材与家常做法，不必把餐饮全部安排在景点周边。</p></div>
+        <div class="card" data-mark="山"><h3>木江界</h3><p>以山地家常菜、农产品及住宿餐食为主。选择可能较少，转场时准备饮水与少量补给。</p></div>
+        <div class="card" data-mark="南"><h3>胡志明市／南部</h3><p>体验南部风味、市场小吃、咖啡馆与更丰富的城市餐饮场景。</p></div>
+      </div>
+      <div class="note"><b>人文提醒：</b>在村寨、宗教场所和纪念空间保持合宜着装；拍摄人物、住宅或劳作场景前先征得同意。街头饮食选择客流稳定、现做现卖的摊位，饮水安全优先。</div>
+    </section>
+
+    <section id="weather">
+      <div class="section-head"><div class="section-no">09</div><div><h2>天气与装备思路</h2><p class="lead">9 月末至 10 月初仍需面对湿度和降雨；南北跨度及山地海拔，使一套单薄的城市装备难以覆盖全程。</p></div></div>
+      <div class="weather-band">
+        <div class="weather-north"><h3>北部与山区</h3><p>河内、宁平可能有降雨和较高湿度；木江界早晚体感通常更凉，山地天气变化明显。</p><p><b>准备：</b>轻便防雨外层、防滑步行鞋、速干衣物与薄保暖层。</p></div>
+        <div class="weather-south"><h3>胡志明市</h3><p>按照炎热、潮湿和阵雨环境准备，留意高温与室内空调带来的体感变化。</p><p><b>准备：</b>防晒、驱蚊、折叠雨具、补水用品与可防水的行李内袋。</p></div>
+      </div>
+      <div class="note">临近出发再查看天气与山路状态，根据短期预报调整装备和户外顺序；当前不以远期预报锁定活动。</div>
+    </section>
+
+    <section id="budget">
+      <div class="section-head"><div class="section-no">10</div><div><h2>预算框架</h2><p class="lead">现阶段只建立成本结构，不填入未经确认的价格。航班、交通方式、人数与住宿档次确定后，再形成总额和每日预算。</p></div></div>
+      <table>
+        <thead><tr><th>类别</th><th>主要内容</th><th>当前处理方式</th></tr></thead>
+        <tbody>
+          <tr><td>国际交通</td><td>中国—河内、胡志明市—中国</td><td>比较北京／南京两端的总价与总耗时</td></tr>
+          <tr><td>境内交通</td><td>北部陆路、河内—胡志明市航班</td><td>山区车辆和国内航班是重点变量</td></tr>
+          <tr><td>住宿</td><td>四地酒店／民宿</td><td>城市住宿与山地民宿分别估算</td></tr>
+          <tr><td>餐饮</td><td>正餐、咖啡、小吃、山区补给</td><td>城市与山区分别预留</td></tr>
+          <tr><td>活动与门票</td><td>游船、景区、文化体验</td><td>逐日路线确认后加入</td></tr>
+          <tr><td>其他</td><td>市内交通、签证、保险、通信</td><td>出发前统一确认并保留凭证</td></tr>
+          <tr><td>机动金</td><td>天气、交通变化与临时支出</td><td>单独保留，不与日常消费混用</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="skeleton">
+      <div class="section-head"><div class="section-no">11</div><div><h2>路线骨架与后续空间</h2><p class="lead">以下只确定地点顺序，不等同于逐日行程。每段的具体日期和夜数仍需在航班与山区交通确认后填写。</p></div></div>
+      <div class="skeleton">
+        <div class="skeleton-row"><time>2026-09-28</time><div><b>中国出发 → 河内</b><br><span>国际抵达与城市适应</span></div></div>
+        <div class="skeleton-row"><time>日期待定</time><div><b>河内 → 宁平</b><br><span>由城市进入喀斯特田园</span></div></div>
+        <div class="skeleton-row"><time>日期待定</time><div><b>宁平 → 木江界</b><br><span>经河内中转或采用确认后的可靠公路方案</span></div></div>
+        <div class="skeleton-row"><time>日期待定</time><div><b>木江界 → 河内</b><br><span>山区返程、休整并保留缓冲</span></div></div>
+        <div class="skeleton-row"><time>日期待定</time><div><b>河内 → 胡志明市</b><br><span>国内航班完成南北切换</span></div></div>
+        <div class="skeleton-row"><time>2026-10-08</time><div><b>胡志明市 → 中国</b><br><span>返回北京或南京，以最终航班方案为准</span></div></div>
+      </div>
+      <h3 style="margin-top:36px">下一版需要确认</h3>
+      <ul class="todo">
+        <li>北京或南京的实际出发方案及最终返回城市</li><li>各目的地停留夜数和转场日期</li><li>宁平住宿区域与自然／人文体验取舍</li><li>宁平至木江界是否经河内中转</li><li>木江界车辆、观景范围与雨天替代方案</li><li>河内飞胡志明市的航班与缓冲时间</li><li>住宿档次、同行人数、预算上限和饮食忌口</li><li>需要提前预订与可保持机动的项目</li>
+      </ul>
+    </section>
+
+    <section id="credits">
+      <div class="section-head"><div class="section-no">附</div><div><h2>图片来源与许可</h2><p class="lead">页面图片均下载到本地资源目录，离线打开 HTML 仍可显示。点击页面照片可放大查看。</p></div></div>
+      <ul class="credits">
+        <li>河内老城区：Vyacheslav Argenberg，CC BY 4.0，<a href="https://commons.wikimedia.org/wiki/File:Vietnam,_Hanoi,_Streets_of_central_Hanoi.jpg">Wikimedia Commons</a></li>
+        <li>还剑湖：Daderot，CC0 1.0，<a href="https://commons.wikimedia.org/wiki/File:Hoan_Kiem_Lake_-_Hanoi,_Vietnam_-_DSC03695.JPG">Wikimedia Commons</a></li>
+        <li>河内文庙：Kok Leng Yeo，CC BY 2.0，<a href="https://commons.wikimedia.org/wiki/File:Temple_of_Literature,_Hanoi,_Vietnam_(5246431556).jpg">Wikimedia Commons</a></li>
+        <li>宁平长安：Vyacheslav Argenberg，CC BY 4.0，<a href="https://commons.wikimedia.org/wiki/File:Vietnam,_Ninh_Binh,_Trang_An_Area.jpg">Wikimedia Commons</a></li>
+        <li>三谷河道：Minh Phượng（Neweco），CC BY-SA 3.0，<a href="https://commons.wikimedia.org/wiki/File:Tamcoc.jpg">Wikimedia Commons</a></li>
+        <li>舞洞峰顶：lumoplank，CC0 1.0，<a href="https://commons.wikimedia.org/wiki/File:Ninh_Binh_-_NinhBinh1648.jpg">Wikimedia Commons</a></li>
+        <li>木江界金色梯田：Malock2589，CC0 1.0，<a href="https://commons.wikimedia.org/wiki/File:Golden-terraced-fields-in-Mu-Cang-Chai.jpg">Wikimedia Commons</a></li>
+        <li>制句芽梯田：Doan Tuan，CC0 1.0，<a href="https://commons.wikimedia.org/wiki/File:Terraces_in_Che_Cu_Nha_commune,_Mu_Cang_Chai_(Unsplash).jpg">Wikimedia Commons</a></li>
+        <li>口簸山口：Viethavvh，Public Domain，<a href="https://commons.wikimedia.org/wiki/File:Khau_Phạ.jpg">Wikimedia Commons</a></li>
+        <li>胡志明市天际线：Pimnl，CC0 1.0，<a href="https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_Skyline.jpg">Wikimedia Commons</a></li>
+        <li>胡志明市人民委员会大厅：gtknj，CC BY 2.0，<a href="https://commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_Hall_(13919168972).jpg">Wikimedia Commons</a></li>
+        <li>西贡中央邮局：Prenn，CC BY-SA 3.0，<a href="https://commons.wikimedia.org/wiki/File:Saigon_Central_Post_Office.JPG">Wikimedia Commons</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>越南旅行指南 · 总览版 · 最后整理于 2026-08-31</footer>
+
+  <dialog id="lightbox" aria-label="图片查看器"><button type="button" aria-label="关闭">×</button><img alt="放大的旅行图片"></dialog>
+  <script>
+    const dialog = document.querySelector('#lightbox');
+    const dialogImage = dialog.querySelector('img');
+    document.querySelectorAll('figure img').forEach((img) => {
+      img.addEventListener('click', () => {
+        dialogImage.src = img.src;
+        dialogImage.alt = img.alt;
+        dialog.showModal();
+      });
+    });
+    dialog.querySelector('button').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+
+    const links = [...document.querySelectorAll('nav a')];
+    const sections = [...document.querySelectorAll('main section[id]')];
+    const observer = new IntersectionObserver((entries) => {
+      const current = entries.filter(e => e.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      links.forEach(link => link.classList.toggle('active', link.getAttribute('href') === '#' + current.target.id));
+    }, { rootMargin: '-25% 0px -65% 0px', threshold: [0, .2, .5] });
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
